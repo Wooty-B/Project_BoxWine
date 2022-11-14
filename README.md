@@ -54,7 +54,7 @@ Instructions: Run the installer by invoking one of the following commands below:
     ```./boxwine_install -p``` - Display HoneyComb/PCIe Platforms Menu
     ```./boxwine_install -l``` - Install BoxWine for HoneyComb LX2K w/ platform specific patches
     
-Download: [LINK]
+Download: https://github.com/Wooty-B/Project_BoxWine/releases/
 
 <a name="multi"/>
 
