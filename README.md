@@ -1,4 +1,4 @@
-# Project_BoxWine
+# Project BoxWine
 
 #### A guide for setting up ARM platforms to run x86 & x86_64 apps and games, with install script.
 
