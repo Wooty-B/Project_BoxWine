@@ -42,7 +42,7 @@ Description: Used to fully install Box86/64, Wine 32/64-Bit and Steam automatica
 
 Script Version: 0.1
 
-Architectures Supported: aarch64 [currently armhf has limited support
+Architectures Supported: aarch64 [currently armhf has limited support]
 
 Platforms Supported: Debian 11 [currently other versions have limited support]
 
