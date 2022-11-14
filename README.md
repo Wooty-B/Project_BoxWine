@@ -62,7 +62,7 @@ Download: [LINK]
 
 Description: Some distributions have package managers and/or os level support for multiple architectures. This is required for enabling 32-Bit support which is needed by most Windows games.
 
-Debian/Ubuntu:
+Debian/Ubuntu Instructions:
 
 	```
 	sudo dpkg --add-architecture armhf
@@ -75,9 +75,9 @@ Debian/Ubuntu:
 
 Description: Used to translate 32-Bit x86 Linux system calls into armhf compatable ones for native execution of x86 binaries/applications.
 
-Instructions:
+Debian/Ubuntu Instructions:
 
-	```
+```
 mkdir ~/box86_setup && cd ~/box86_setup
 sudo apt install --yes --quiet --quiet \
 	gcc-arm-linux-gnueabihf \
@@ -90,7 +90,7 @@ mkdir build && cd build && cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithD
 sudo make install
 cd ../.. && sudo rm -rf ~/box86_setup
 sudo systemctl restart systemd-binfmt
-	```
+```
   
 <a name="box64"/>
 
@@ -98,9 +98,9 @@ sudo systemctl restart systemd-binfmt
 
 Description: Used to translate 32-Bit x86_64 Linux system calls into aarch64 compatable ones for native execution of x86_64 binaries/applications.
 
-Instructions:
+Debian/Ubuntu Instructions:
 
-	```
+```
 sudo apt update && sudo apt upgrade
 mkdir ~/box64_setup && cd ~/box64_setup
 sudo apt install --yes --quiet --quiet \
@@ -114,7 +114,8 @@ mkdir build && cd build && cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithD
 sudo make install
 cd ../.. && sudo rm -rf ~/box64_setup
 sudo systemctl restart systemd-binfmt
-	```
+```
+
 <a name="wine64"/>
 
 ## Install Wine Multiarch
@@ -125,9 +126,9 @@ Requirements: Box86, Box64
 
 Wine Versions Tested: 5.18; 5.21; 6.0.2; 7.0.0.0
 
-Instructions:
+Debian/Ubuntu Instructions:
 
-	```
+```
 mkdir ~/wine3264_setup && cd ~/wine3264_setup
 wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable-i386_6.0.2~buster-1_i386.deb
 wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable_6.0.2~buster-1_i386.deb
@@ -149,7 +150,7 @@ WINEPREFIX=~/.wine64 WINEARCH=win64 wine winecfg
 echo 'alias wine64="WINEPREFIX=~/.wine64 wine"' | tee ~/.bashrc
 source ~/.bashrc
 cd .. && sudo rm -rf ~/wine3264_setup
-	```
+```
   
 <a name="wine32"/>
 
@@ -161,7 +162,7 @@ Requirements: Box86
 
 Wine Versions Tested: 5.18; 5.21; 6.0.2; 7.0.0.0
 
-Instructions:
+Debian/Ubuntu Instructions:
 
 ```
 mkdir ~/wine32_setup && cd ~/wine32_setup
@@ -180,6 +181,7 @@ WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
 source ~/.bashrc
 cd .. && sudo rm -rf ~/wine32_setup
 ```
+
 <a name="winetricks"/>
 
 ## Install Winetricks
@@ -188,7 +190,7 @@ Description: Winetricks is a useful tool that helps install Windows libraries re
 
 Requirements: Wine 32-Bit and/or 64-Bit, Box86 and/or Box64
 
-Instructions:
+Debian/Ubuntu Instructions:
 
 ```
 sudo apt-get install --yes --quiet --quiet \
@@ -209,7 +211,7 @@ Description: Nothing needs to be said, however Steam is one of the largest gamin
 
 Requirements: Box86, Box64 [Only for 64-Bit support, not needed for 32-Bit only systems/games]
 
-Instructions:
+Debian/Ubuntu Instructions:
 
 ```
 mkdir ~/steam_setup && cd ~/steam_setup
@@ -253,6 +255,7 @@ chmod 755 ~/run_steam.sh
 cd .. && sudo rm -rf ~/steam_setup
 cd ~ && ./run_steam.sh
 ```
+
 Additional Description: The instructions below rename the install script to ```runsteam``` and moves it to ```/usr/local/bin``` so it can be executed directly from the terminal. 
 
 Additional Instructions:
@@ -282,7 +285,7 @@ Edit the file /etc/gbinder.conf:
 
 Description: This is not required in most cases if your distribution supports multiarch. However, this may be useful for getting a 32-Bit environment on distributions that don't support multiarch but have 32-Bit package support. This could also be useful for other use cases.
 
-Instructions:
+Debian/Ubuntu Instructions:
 
    	```
     	sudo apt install schroot debootstrap
@@ -366,6 +369,7 @@ wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bas
 ```
 GLmark2: A GL benchmarking tool for determining general GL performance for older systems, and can be useful for comparing benchmanerks between ARM boards or testing GPU performance.
 
+GLmark2 Debian/Ubuntu Instructions:
 ```
 mkdir ~/glmark_setup && cd ~/glmark_setup
 sudo apt install --yes --quiet --quiet \
