@@ -32,7 +32,7 @@
 
 ## Important Notes
 
- The Project BoxWine guide is under active development and in it's infancy, especially the installer script itself. Please be aware the guide is primarily geared toward Debian systems, with Ubuntu, Void, Fedora and others to follow, probably in that order. Some distributions are made for multiarch, some with support for setting it up, while others have almost none at all. In the case of the latter you will only be able to run x86_64 Linux binaries and will be limited to Windows applications that are strictly 64-bit. In extremely rare cases, mainly in the server arena, your CPU may only support 64-bit instructions and not have 32-bit backwards compatability. Your milage may vary, however if you run into any issues please report them in the issue section so I can correct this guide/installer or add feature requests.
+ The Project BoxWine guide is under active development and in it's infancy, especially the installer script itself. Please be aware the guide is primarily geared toward Debian systems, with Ubuntu, Void, Fedora and others to follow, probably in that order. Some distributions are made for multiarch, some with support for setting it up, while others have almost none at all. In the case of the latter you will only be able to run x86_64 Linux binaries and will be limited to Windows applications that are strictly 64-bit. In extremely rare cases, mainly in the server arena, your CPU may only support 64-bit instructions and not have 32-bit backwards compatability. (i.e. Cavium ThunderX)  Your milage may vary, however if you run into any issues please report them in the issue section so I can correct this guide/installer or add feature requests.
  
 <a name="boxwine"/>
 
