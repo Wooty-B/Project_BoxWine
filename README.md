@@ -177,8 +177,6 @@ sudo ln -s ~/wine/bin/wineboot /usr/local/bin/wineboot
 sudo ln -s ~/wine/bin/winecfg /usr/local/bin/winecfg
 sudo ln -s ~/wine/bin/wineserver /usr/local/bin/wineserver
 sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg /usr/local/bin/wineserver
-WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
-source ~/.bashrc
 cd .. && sudo rm -rf ~/wine32_setup
 ```
 
