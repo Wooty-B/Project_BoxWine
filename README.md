@@ -57,7 +57,11 @@ Instructions: Run the installer by invoking one of the following commands below:
 Download: https://github.com/Wooty-B/Project_BoxWine/releases/
 
 <a name="multi"/>
-
+	
+	
+### The following sections are here for manually installing the components that make up BoxWine, until this project matures, these will be posted here in the main README for convenience.
+	
+	
 ## Multiarch Setup
 
 Description: Some distributions have package managers and/or os level support for multiple architectures. This is required for enabling 32-Bit support which is needed by most Windows games.
