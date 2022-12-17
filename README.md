@@ -376,6 +376,7 @@ GLmark2 Debian/Ubuntu Instructions:
 mkdir ~/glmark_setup && cd ~/glmark_setup
 sudo apt install --yes --quiet --quiet \
 	meson \
+	pkg-config \
 	libpng-dev \
 	libjpeg-dev \
 	libx11-dev \
@@ -383,6 +384,7 @@ sudo apt install --yes --quiet --quiet \
 	wayland-protocols \
 	libegl-dev \
 	libgl-dev \
+	cmake \
 	build-essential \
 	bison \
 	flex \
