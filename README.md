@@ -152,7 +152,9 @@ sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg
 sudo apt install --yes \
 	libcups2:armhf \
 	libfreetype6:armhf \
-	libmpg123-0:armhf
+	libmpg123-0:armhf \
+	libfontconfig1:armhf \
+	libxext6:armhf
 WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
 WINEPREFIX=~/.wine64 WINEARCH=win64 wine winecfg
 echo 'alias wine64="WINEPREFIX=~/.wine64 wine"' | tee -a ~/.bashrc
