@@ -71,6 +71,7 @@ Debian/Ubuntu Instructions:
 	```
 	sudo dpkg --add-architecture armhf
 	sudo apt update && sudo apt upgrade
+	sudo apt install libc6:armhf -y
 	```
 
 <a name="box86"/>
