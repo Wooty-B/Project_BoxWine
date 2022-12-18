@@ -151,7 +151,7 @@ sudo ln -s ~/wine/bin/wineserver /usr/local/bin/wineserver
 sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg /usr/local/bin/wineserver
 WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
 WINEPREFIX=~/.wine64 WINEARCH=win64 wine winecfg
-echo 'alias wine64="WINEPREFIX=~/.wine64 wine"' | tee ~/.bashrc
+echo 'alias wine64="WINEPREFIX=~/.wine64 wine"' | tee -a ~/.bashrc
 source ~/.bashrc
 cd .. && sudo rm -rf ~/wine3264_setup
 ```
