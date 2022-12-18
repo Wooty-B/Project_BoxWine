@@ -230,8 +230,8 @@ Debian/Ubuntu Instructions:
 
 ```
 mkdir ~/steam_setup && cd ~/steam_setup
-echo 'export STEAMOS=1' | sudo tee /etc/profile.d/steam.sh
-echo 'export STEAM_RUNTIME=1' | sudo tee /etc/profile.d/steam.sh
+echo 'export STEAMOS=1' | sudo tee -a /etc/profile.d/steam.sh
+echo 'export STEAM_RUNTIME=1' | sudo tee -a /etc/profile.d/steam.sh
 source /etc/profile.d/steam.sh
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 sudo dpkg -i steam.deb
