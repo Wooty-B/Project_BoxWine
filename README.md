@@ -158,6 +158,7 @@ sudo apt install --yes \
 	libxinerama1:armhf \
 	libxxf86vm1:armhf \
 	libxrender1:armhf \
+	libxrandr2:armhf \
 	libxcomposite1:armhf \
 	libxi6:armhf \
 	libxcursor1:armhf
