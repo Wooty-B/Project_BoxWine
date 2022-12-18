@@ -154,7 +154,13 @@ sudo apt install --yes \
 	libfreetype6:armhf \
 	libmpg123-0:armhf \
 	libfontconfig1:armhf \
-	libxext6:armhf
+	libxext6:armhf \
+	libxinerama1:armhf \
+	libxxf86vm1:armhf \
+	libxrender1:armhf \
+	libxcomposite1:armhf \
+	libxi6:armhf \
+	libxcursor1:armhf
 WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
 WINEPREFIX=~/.wine64 WINEARCH=win64 wine winecfg
 echo 'alias wine64="WINEPREFIX=~/.wine64 wine"' | tee -a ~/.bashrc
