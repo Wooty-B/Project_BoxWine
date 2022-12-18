@@ -109,7 +109,6 @@ Debian/Ubuntu Instructions:
 sudo apt update && sudo apt upgrade
 mkdir ~/box64_setup && cd ~/box64_setup
 sudo apt install --yes --quiet --quiet \
-	gcc-arm-linux-gnueabihf \
 	git \
 	build-essential \
 	cmake \
